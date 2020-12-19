@@ -8,12 +8,22 @@
 # print(days,":",h,":",int(n))
 
 
-age = (input("Введите возраст: "))
-if age.isdigit():
-    age = int(age)
-    if age >= 18:
-        print("Добро пожаловать в Python!")
+# age = (input("Введите возраст: "))
+# if age.isdigit():
+#     age = int(age)
+#     if age >= 18:
+#         print("Добро пожаловать в Python!")
+#     else:
+#         print("Иди учи Scratch!")
+# else:
+#     age = (input("Введите возраст: "))
+
+
+n = int(input("Введите год: "))
+if (n >= 0):
+    if(n%4 == 0) or (n%400 == 0) and (n%100 != 0):
+        print("YES")
     else:
-        print("Иди учи Scratch!")
+        print("NO")
 else:
-    age = (input("Введите возраст: "))
+    print("Что за год такой?")
